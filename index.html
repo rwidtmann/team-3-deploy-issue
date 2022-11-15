@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End-App</title>
+    <link rel = "stylesheet" href = "./assets/style.css" />
+</head>
+<body>
+    <div id="mySidepanel" class="sidepanel"> 
+        <div id="prepingsAPI">
+            
+
+        </div>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+        <a href="#">🍽️ By Ingredient</a>
+        <a href="#">🛒 Shopping List</a>
+        <form>
+            <label for="item-input">Item</label>
+            <input type="text" id="item-input">
+            <label for="quantity-input">Quantity</label>
+            <input type="number" id="quantity-input">
+            <button type="submit" id="submit-btn">Add</button>
+          </form>
+     
+          <div id="lists">
+            <p class="list__label">Still need to grab <span class="quantity" id="shopping-num"></span></p>
+            <ul id="shopping-list">
+            </ul>
+            <p class="list__label">In cart <span class="quantity" id="bought-num"></span></p>
+            <ul id="bought-list">
+            </ul>
+          </div>
+     
+        </main>
+        <script src="http://api.preppings.com/api/?key=647e2e62b3fd01e00813cd59c3856263"data-color-schema="dark"></script>
+        <div class="push"></div>
+    </div>
+       
+      </div>
+      
+      <button class="openbtn" onclick="openNav()">&#9776; Menu</button>
+      
+    <header class="main-header">
+        <h1>Front-End-App</h1>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href = "#about-us">About Us</a>
+                    </li>
+                    <li>
+                        <a href = "#pantry">Pantry</a>
+                    </li>
+                    <li>
+                        <a href = "#recipes">Recipes</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="header2">
+            <h3 class="intro">The Website where you can look up recipes by name, or by inputting an ingredient! Fast, easy, and able to add ingredients to a grocery list.</h3>
+            <div class="dishsearch">
+                <input id="recipe" type ="text" placeholder="Enter a dish" />
+                <button id="button1">Search</button>
+            </div>
+            <div class="ingredientsearch">
+                <input id="ingredient" type = "text" placeholder="Enter an ingredient" />
+                <button id="button2">Search1</button>
+            </div>      
+        </div>
+<main class = "main">
+    <ul id="recipeList1"></ul>
+    <ul id="recipeList2"></ul>
+    <ul id="ingredientList"></ul>
+    <div id="recipeInformation"></div>
+
+</main>
+
+<footer class = "footer"> 
+    <div>
+        
+    </div>
+</footer>
+</body>
+<!-- Lodash JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
+<!-- Backbone JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js'></script>
+<script src="assets/script.js"></script>
+</html>
